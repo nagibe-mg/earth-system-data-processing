@@ -206,3 +206,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 data_access/Sentinel3_SurfaceAlbedo.nc
+
+# Ignore all NetCDF files across the repository
+**/*.nc
