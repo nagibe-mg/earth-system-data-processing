@@ -64,7 +64,7 @@ This resulted in a 300.73 MB netcdf file that took 1 min 42 sec to download.
 1. The first encountered issue was that the initial proposed dataset was changed. There was a problem with the access through the proxy username to access the CMIP6 data. Therefore, I changed to a CDS dataset. Some data stores are better than others, regarding documentations and ease of access.
 2. The volume of the downloaded data had to be considered for the election of the uploaded query. If the sentinel 3 data was chosen, the volume was too large. Therefore, an older timespan was selected, which used a different satellite with lower spatial resolution. Also, time was limited to only one month to ensure that the output file was not too large.
 3. Error in pushing changes due to trying to push .nc file (without noticing). This caused the necessity to remove this file from history and create a gitignore file before pushing again.
-4. Data is unreadable due to downloaded file being apparently zipped. Used Google Gemini to identify this problem and insert the code lines for uncompressing it. 
+4. Data is unreadable due to downloaded file being apparently zipped. Used Google Gemini to identify this problem and insert the code lines for uncompressing it. Make sure to exclude all .nc files from push requests by adding this to gitignore file. 
 
 
 
